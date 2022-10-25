@@ -1,5 +1,5 @@
 terraform {
-    backend "remote"{
+    backend "remote" {
         organization = "github-auto-deploy"
 
         workspaces {
@@ -7,18 +7,18 @@ terraform {
         }
         
     }
-  required_providers {
+    required_providers {
     # contains terraform settings, including the required providers Terraform will use to provision infrastructure
     aws = {
-      source  = "hashicorp/aws"
+        source  = "hashicorp/aws"
     # source is the global source address
     # source defines an optional hostname, namespace, provider type
     # providers are installed from the Terraform Registry by default
     # hashicorp/aws is shorthand for registty.terraform.io/hashicorp/aws
-      version = "~> 4.16"
+        version = "~> 4.16"
     # version is optional but recommended
     }
-  }
+    }
 
   required_version = ">= 1.2.0"
 }
