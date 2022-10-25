@@ -21,3 +21,11 @@ resource "aws_instance" "app_server" {
     Name = "ExampleAppServerInstance"
   }
 }
+
+cloud {
+    organization = "github-auto-deploy"
+
+    workspaces {
+        name = "gh-actions-demo"
+    }
+}
