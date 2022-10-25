@@ -1,4 +1,12 @@
 terraform {
+    backend "remote"{
+        organization = "github-auto-deploy"
+
+        workspaces {
+            name = "gh-actions-demo"
+        }
+        
+    }
   required_providers {
     # contains terraform settings, including the required providers Terraform will use to provision infrastructure
     aws = {
@@ -34,10 +42,10 @@ resource "aws_instance" "app_server" {
   }
 }
 
-cloud {
-    organization = "github-auto-deploy"
+# cloud {
+#     organization = "github-auto-deploy"
 
-    workspaces {
-        name = "gh-actions-demo"
-    }
-}
+#     workspaces {
+#         name = "gh-actions-demo"
+#     }
+# }
