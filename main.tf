@@ -16,6 +16,8 @@ terraform {
 }
 
 provider "aws" {
+# provider block configures the specified provider
+# a provider is a plugin Terraform uses to create and manage your resources
   region  = "us-east-2"
 }
 
