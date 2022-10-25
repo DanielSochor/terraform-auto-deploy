@@ -1,5 +1,6 @@
 terraform {
   required_providers {
+    # contains terraform settings, including the required providers Terraform will use to provision infrastructure
     aws = {
       source  = "hashicorp/aws"
       version = "~> 4.16"
