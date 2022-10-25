@@ -29,7 +29,7 @@ provider "aws" {
   region  = "us-east-2"
 }
 
-resource "aws_instance" "app_server" {
+resource "aws_instance" "tf_created_instance" {
 # a resource might be physical or virtual component or a logical resource
 # a resource has two strings before the block: resource type and resource name
 #   resource type prefix maps to the name of the provider
@@ -38,7 +38,7 @@ resource "aws_instance" "app_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "ExampleAppServerInstance"
+    Name = "Intance created by Terraform"
   }
 }
 
