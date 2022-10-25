@@ -11,7 +11,7 @@ terraform {
       # version is optional but recommended
     }
   }
-  backend "remote" {
+  cloud {
     organization = "github-auto-deploy"
 
     workspaces {
