@@ -40,3 +40,7 @@ provider "aws" {
 #     Name = "Instance created by Terraform"
 #   }
 # }
+
+module "ec2 created by module" {
+  source = "./modules/ec2.tf"
+}
