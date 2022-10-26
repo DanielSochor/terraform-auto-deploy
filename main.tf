@@ -40,11 +40,3 @@ resource "aws_instance" "tf_created_instance" {
     Name = "Instance created by Terraform"
   }
 }
-
-# cloud {
-#     organization = "github-auto-deploy"
-
-#     workspaces {
-#         name = "gh-actions-demo"
-#     }
-# }
