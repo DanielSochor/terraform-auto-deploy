@@ -41,6 +41,6 @@ provider "aws" {
 #   }
 # }
 
-module "ec2 created by module" {
+module "ec2_created_by_module" {
   source = "./modules"
 }
