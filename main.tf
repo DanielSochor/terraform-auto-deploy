@@ -42,5 +42,5 @@ provider "aws" {
 # }
 
 module "ec2 created by module" {
-  source = "./modules/ec2.tf"
+  source = "./modules"
 }
