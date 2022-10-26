@@ -34,7 +34,7 @@ resource "aws_instance" "tf_created_instance" {
   #   resource type prefix maps to the name of the provider
   #   the resource type and name together form a unique ID for the resource
   ami           = "ami-089a545a9ed9893b6"
-  instance_type = "t2.micro"
+  instance_type = "t2.small"
 
   tags = {
     Name = "Instance created by Terraform"
