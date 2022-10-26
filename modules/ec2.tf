@@ -7,6 +7,6 @@ resource "aws_instance" "tf_created_instance" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Instance created by Terraform"
+    Name = "Created by Terraform Local Module"
   }
 }
