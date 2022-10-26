@@ -44,3 +44,11 @@ provider "aws" {
 module "ec2_created_by_local_module" {
   source = "./modules"
 }
+
+module "ec2_created_by_terraform_provided_module" {
+  source = "terraform-aws-modules/ec2-instance/aws"
+
+  tags = {
+    Name = "Created by Terraform Provided Module"
+  }
+}
