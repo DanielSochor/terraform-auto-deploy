@@ -47,7 +47,7 @@ module "ec2_created_by_local_module" {
 
 module "ec2_created_by_terraform_provided_module" {
   source = "terraform-aws-modules/ec2-instance/aws"
-
+#TODO need to determine the minimum required attributes
   tags = {
     Name = "Created by Terraform Provided Module"
   }
