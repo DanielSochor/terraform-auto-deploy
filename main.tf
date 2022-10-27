@@ -52,3 +52,6 @@ module "ec2_created_by_terraform_provided_module" {
     Name = "Created by Terraform Provided Module"
   }
 }
+
+#TODO need to determine the minimum required attributes
+#   ami = "ami-089a545a9ed9893b6"
