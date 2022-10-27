@@ -48,7 +48,7 @@ module "ec2_created_by_local_module" {
 module "ec2_created_by_terraform_provided_module" {
   source = "terraform-aws-modules/ec2-instance/aws"
   ami = "ami-089a545a9ed9893b6"
-
+  instance_type = "t2.micro"
   tags = {
     Name = "Created by Terraform Provided Module"
   }
